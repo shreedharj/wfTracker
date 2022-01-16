@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   overflow: hidden;
 }
 
@@ -28,9 +28,24 @@ body {
   position: relative;
 }
 
-.location-icon {
+.wildfirelocation-icon {
   font-size: 2rem;
-  color: red;
+  color: rgb(255, 115, 0);
+}
+
+.volcanolocation-icon {
+  font-size: 2rem;
+  color: rgb(255, 0, 0);
+}
+
+.stormlocation-icon {
+  font-size: 2rem;
+  color: rgb(2, 44, 100);
+}
+
+.iceberglocation-icon {
+  font-size: 2rem;
+  color: rgba(105, 179, 248, 0.952);
 }
 
 .loader {
