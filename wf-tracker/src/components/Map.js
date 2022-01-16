@@ -19,19 +19,19 @@ const Map = ({ eventData, center, zoom }) => {
 
     const markers = eventData.map((ev, index) => {
         if(ev.categories[0].id === NATURAL_EVENT_WILDFIRE) {
-            return <WildfireMarker key={index} lat={ev.geometries[0].coordinates[1]} lng={ev.geometries[0].coordinates[0]} onClick={() => setLocationInfo({ id: ev.id, title: ev.title, date: ev.geometries[0].date })} />
+            return <WildfireMarker key={index} lat={ev.geometries[0].coordinates[1]} lng={ev.geometries[0].coordinates[0]} onClick={() => setLocationInfo({ id: ev.id, title: ev.title, date: ev.geometries[0].date, message: "Watch out for Air Pollution"})} />
         }
 
         if(ev.categories[0].id === NATURAL_EVENTS_VOLCANOES) {
-            return <VolcanoMarker key={index} lat={ev.geometries[0].coordinates[1]} lng={ev.geometries[0].coordinates[0]} onClick={() => setLocationInfo({ id: ev.id, title: ev.title, date: ev.geometries[0].date })} />
+            return <VolcanoMarker key={index} lat={ev.geometries[0].coordinates[1]} lng={ev.geometries[0].coordinates[0]} onClick={() => setLocationInfo({ id: ev.id, title: ev.title, date: ev.geometries[0].date, message:"Evacuate to a Safe Place"})} />
         }
 
         if(ev.categories[0].id === NATURAL_EVENTS_STORM) {
-            return <StormMarker key={index} lat={ev.geometries[0].coordinates[1]} lng={ev.geometries[0].coordinates[0]} onClick={() => setLocationInfo({ id: ev.id, title: ev.title, date: ev.geometries[0].date})} />
+            return <StormMarker key={index} lat={ev.geometries[0].coordinates[1]} lng={ev.geometries[0].coordinates[0]} onClick={() => setLocationInfo({ id: ev.id, title: ev.title, date: ev.geometries[0].date, message:"Stay Indoors" })} />
         }
 
         if(ev.categories[0].id === NATURAL_EVENTS_ICEBERG) {
-            return <IcebergMarker key={index} lat={ev.geometries[0].coordinates[1]} lng={ev.geometries[0].coordinates[0]} onClick={() => setLocationInfo({ id: ev.id, title: ev.title, date: ev.geometries[0].date })} />
+            return <IcebergMarker key={index} lat={ev.geometries[0].coordinates[1]} lng={ev.geometries[0].coordinates[0]} onClick={() => setLocationInfo({ id: ev.id, title: ev.title, date: ev.geometries[0].date, message: "Titantic" })} />
         }
         return null
     })
