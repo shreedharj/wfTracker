@@ -4,7 +4,7 @@
 
 ## Usage
 
-> Have to install node.js from https://nodejs.org/en/download/ and in termial do:
+> Have to install node.js from https://nodejs.org/en/download/ and in terminal do:
 ```
 npm install
 npm start
