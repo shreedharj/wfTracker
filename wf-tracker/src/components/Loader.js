@@ -1,9 +1,9 @@
-// import spinner from './spinner.gif'
+import spinner from './loading.gif'
 
 const Loader = () => {
     return (
         <div className="loader">
-            {/* <img src={spinner} alt="Loading" /> */}
+            <img src={spinner} alt="Loading" />
             <h1>Compiling Data from NASA EONET</h1>
         </div>
     )
