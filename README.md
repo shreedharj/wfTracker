@@ -1,3 +1,5 @@
+# WF-Tracker: Cruzhacks22
+
 ## Inspiration
 At UCSC, the environment is something that everyone on campus cares about deeply. We wanted to find a way to help protect it against wildfires and other natural disasters. Implementing a Google Maps API telling users where certain natural disasters are occurring sounded like a great way for us to warn people about these events, so they can then take the necessary steps to protect themselves and mitigate the forthcoming damage. That is why we created **Disaster Tracker**.
 
